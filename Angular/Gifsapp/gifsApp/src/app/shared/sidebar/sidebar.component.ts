@@ -12,6 +12,13 @@ get historial(){
   return this.GifsService.historial;
 }
 
+
 constructor( private GifsService: GifsService){}
 
+
+buscar (termino : string){
+
+  console.log(termino);
+    return this.GifsService.buscargifts(termino);
+}
 }
